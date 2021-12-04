@@ -24,7 +24,7 @@
 Antenna Fed by a Secondary Loop,  QEX July/August 2018 *)
 (* Warren L. Stutzman, Gary A. Thiele, Antenna Theory and Design, 1998 John Wiley & Sons. *)
 
-(* Sat Dec  4 13:16:49 CST 2021 *)
+(* Sat Dec  4 16:26:26 CST 2021 *)
 (* Jaakko Koivuniemi, AC1BB *)
 
 (* accuracy goal in numerical integration *)
@@ -320,7 +320,7 @@ EImxyz = Table[{{x, y,
      N[Ey[\[Omega], \[Beta], \[Mu]r, \[Epsilon]r, Irf, a, b, x, y, 
        z]]], 0}}, {x, 0, 2, 1}, {y, 0, 2, 1}, {z, 0.1, 3, 1}] 
 
-Export["/tmp/E_Read.pdf", 
+Export["/tmp/E_Real.pdf", 
  ListVectorPlot3D[ERexyz, VectorColorFunction -> "Rainbow", 
  PlotLegends -> Automatic, 
  AxesLabel -> {"x[m]", "y[m]", "z[m]"}]] 
